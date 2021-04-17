@@ -1,0 +1,47 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "A simple radial chart with embedded data.",
+  "data": {
+    "values": [{"city":"Miami","month":"Jan","monthnum":0,"sunshine":7.1612903226,"temp":76,"temp_bins":2,"seattle_sun":2.2258064516,"num_days":31,"total_hours":744},{"city":"Miami","month":"Feb","monthnum":1,"sunshine":8.1071428571,"temp":78,"temp_bins":2,"seattle_sun":3.8571428571,"num_days":28,"total_hours":672},{"city":"Miami","month":"Mar","monthnum":2,"sunshine":8.5806451613,"temp":80,"temp_bins":3,"seattle_sun":5.7419354839,"num_days":31,"total_hours":744},{"city":"Miami","month":"Apr","monthnum":3,"sunshine":9.1666666667,"temp":83,"temp_bins":3,"seattle_sun":6.9,"num_days":30,"total_hours":720},{"city":"Miami","month":"May","monthnum":4,"sunshine":9.0322580645,"temp":87,"temp_bins":3,"seattle_sun":8.1612903226,"num_days":31,"total_hours":744},{"city":"Miami","month":"Jun","monthnum":5,"sunshine":8.3666666667,"temp":89,"temp_bins":3,"seattle_sun":8.9333333333,"num_days":30,"total_hours":720},{"city":"Miami","month":"Jul","monthnum":6,"sunshine":8.6129032258,"temp":91,"temp_bins":4,"seattle_sun":10.064516129,"num_days":31,"total_hours":744},{"city":"Miami","month":"Aug","monthnum":7,"sunshine":8.4838709677,"temp":91,"temp_bins":4,"seattle_sun":9.064516129,"num_days":31,"total_hours":744},{"city":"Miami","month":"Sep","monthnum":8,"sunshine":7.2,"temp":89,"temp_bins":3,"seattle_sun":7.3666666667,"num_days":30,"total_hours":720},{"city":"Miami","month":"Oct","monthnum":9,"sunshine":6.935483871,"temp":86,"temp_bins":3,"seattle_sun":4.5806451613,"num_days":31,"total_hours":744},{"city":"Miami","month":"Nov","monthnum":10,"sunshine":7.0666666667,"temp":82,"temp_bins":3,"seattle_sun":2.4,"num_days":30,"total_hours":720},{"city":"Miami","month":"Dec","monthnum":11,"sunshine":6.7419354839,"temp":78,"temp_bins":2,"seattle_sun":1.6774193548,"num_days":31,"total_hours":744}]
+  },
+
+    "layer": [   
+    { "mark": {"type": "arc", "innerRadius": 0, "stroke": "black", "opacity":0.6, "color":"gold", "strokeWidth": 2.0, "strokeOpacity":1.0},
+      "encoding": {
+    "theta": {"field": "monthnum", "type": "nominal", "sort":{"field":"monthnum:Q"}},
+    "radius": {"field": "sunshine", "type": "quantitative", "scale": {"type": "linear", "zero": true, "range":[0,480], "domain":[0,24]}}
+    }},
+
+    { "mark": {"type": "arc", "innerRadius": 0, "stroke": "purple", "opacity": 1.0, "strokeWidth":3, "fill": null, "strokeOpacity":1.0},
+      "encoding": {
+    "theta": {"field": "monthnum", "type": "nominal", "sort":{"field":"monthnum:Q"}},
+    "radius": {"field": "seattle_sun", "type": "quantitative", "scale": {"type": "linear", "zero": true,"range":[0,480], "domain":[0,24]}}
+    }},
+
+  { "mark": {"type": "arc", "innerRadius": 60, "outerRadius": 120, "stroke": "gray", "strokeWidth":1, "fill":null, "strokeDash": [5,10], "strokeOpacity":0.4},
+      "encoding": {
+    "theta": {"field": "monthnum", "type": "nominal", "sort":{"field":"monthnum:Q"}}
+    }},
+
+  { "mark": {"type": "arc", "innerRadius": 120, "outerRadius": 180, "stroke": "gray", "strokeWidth":1, "fill":null, "strokeDash": [5,10], "strokeOpacity":0.4},
+      "encoding": {
+    "theta": {"field": "monthnum", "type": "nominal", "sort":{"field":"monthnum:Q"}}
+    }},
+
+  { "mark": {"type": "arc", "innerRadius": 180, "outerRadius": 240, "stroke": "gray", "strokeWidth":1, "fill":null, "strokeDash": [5,10], "strokeOpacity":0.4},
+      "encoding": {
+    "theta": {"field": "monthnum", "type": "nominal", "sort":{"field":"monthnum:Q"}}
+    }},
+
+    { "mark": {"type": "arc", "innerRadius": 275, "outerRadius": 350, "stroke": "#fff", "strokeWidth":5},
+      "encoding": {
+    "theta": {"field": "monthnum", "type": "nominal", "sort":{"field":"monthnum:Q"}},
+    "color" : {"field":"temp_bins", "type": "ordinal", "legend":null, "sort": {"field": "monthnum:Q"},"scale": {"domain": [0,1,2,3,4], "range": ["#043687", "#719feb","#6eba80","#f2ab27","#b00c0c"]}
+    }
+    }}
+
+    ],
+  "width":550,
+  "height":350,
+  "view": {"stroke": null}
+}
