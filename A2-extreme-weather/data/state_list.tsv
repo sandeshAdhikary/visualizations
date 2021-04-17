@@ -1,0 +1,14 @@
+region`states
+central_climate_region`IL, IN, KY, MO, OH, TN, WV
+east_north_central_climate_region`IA, MI, MN, WI
+greatlakes_states`IL, IN, MI, MN, OH, PA, NY, WI
+gulfcoast_states`AL, FL, LA, MS, TX
+northeast_climate_region`CT, DE, ME, MD, MA, NH, NJ, NY, PA, RI, VT
+northwest_climate_region`ID, OR, WA
+south_climate_region`AR, KS, LA, MS, OK, TX
+southeast_climate_region`AL, FL, GA, NC, SC, VA
+southern_plains`KS, OK, TX
+southwest_climate_region`AZ, CO, NM, UT
+tornado_alley`IA, KS, MO, NE, OK, SD, TX
+west_climate_region`CA, NV
+west_north_central_climate_region`MT, NE, ND, SD, WY
