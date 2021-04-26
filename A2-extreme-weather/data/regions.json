@@ -1,0 +1,17 @@
+{"CCR": {"name":"Central Climate Region", "states":["Illinois","Indiana","Kentucky","Missouri","Ohio","Tennessee", "West Virginia"]},
+          "ENCCR": {"name":"East North Central Climate Region", "states":["Iowa", "Michigan", "Minnesota", "Wisconsin"]},
+          "NECR": {"name":"Northeast Climate Region", "states":["Connecticut", "Delaware", "Maine", "Maryland", "Massachusetts",
+                                                            "New Hampshire", "New Jersey", "New York", "Pennsylvania", "Rhode Island", "Vermont"]},
+           "NWCR": {"name":"Northwest Climate Region", "states":["Idaho", "Oregon", "Washington"]},
+           "SCR": {"name":"South Climate Region", "states":["Arkansas", "Kansas", "Louisiana", "Mississippi", "Oklahoma", "Texas"]},
+           "SECR": {"name":"Southeast Climate Region", "states":["Alabama", "Florida", "Georgia", "North Carolina",
+                                                                "South Carolina", "Virginia"]},
+           "SWCR": {"name":"Southwest Climate Region", "states":["Arizona", "Colorado", "New Mexico", "Utah"]},
+           "WCR": {"name":"West Climate Region", "states":["California", "Nevada"]},
+           "WNCCR": {"name":"West North Climate Region", "states":["Montana", "Nebraska", "North Dakota", "South Dakota",
+                                                                  "Wyoming"]},
+           "GCS": {"name":"Gulf Coast States", "states":["Alabama", "Florida", "Louisiana", "Mississippi", "Texas"]},
+           "GLS": {"name":"Great Lakes States", "states":["Illinois", "Indiana", "Michigan", "Minnesota", "Ohio", "Pennsylvania", "New York", "Wisconsin"]},
+           "SP": {"name":"Southern Plains", "states":["Kansas", "Oklahoma", "Texas"]},
+           "TA": {"name":"Tornado Alley", "states":["Iowa", "Kansas", "Missouri", "Nebraska", "Oklahoma", "South Dakota", "Texas"]}
+          }
